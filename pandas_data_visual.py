@@ -20,4 +20,24 @@ plt.show()
 df1['A'].plot.hist()
 plt.show()
 
-# other plot types
+# other plot types. `areaplot`
+df2.plot.area(alpha=0.4)
+plt.show()
+
+# barplot
+df2.plot.bar(stacked=True)
+plt.show()
+
+# scatter plot
+df1.plot.scatter(x='A', y='B', c='C', cmap='coolwarm')
+plt.show()
+
+# making dataframe
+df = pd.DataFrame(np.random.randn(1000, 2), columns=['a', 'b'])
+# hexplot
+df.plot.hexbin(x='a', y='b', gridsize=25)
+plt.show()
+
+# kernel density estimation
+df2.plot.kde()
+plt.show()
