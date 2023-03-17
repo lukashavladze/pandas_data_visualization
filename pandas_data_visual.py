@@ -1,3 +1,5 @@
+import numpy as np
+import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -11,3 +13,11 @@ print(df2.head())
 df1['A'].hist(bins=30)
 plt.show()
 
+# pandas built in plot types
+df1['A'].plot(kind='hist', bins=30)
+plt.show()
+# another way
+df1['A'].plot.hist()
+plt.show()
+
+# other plot types
