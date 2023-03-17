@@ -1,4 +1,5 @@
 import numpy as np
+import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -11,3 +12,4 @@ print(df2.head())
 # making histogram with pandas
 df1['A'].hist(bins=30)
 plt.show()
+
